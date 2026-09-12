@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Santiago Sosa</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
@@ -43,16 +44,16 @@
     width: 92px;
     height: 92px;
     border-radius: 50%;
-    background: var(--cream);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: var(--ink);
     box-shadow: 0 6px 24px rgba(32, 28, 46, 0.25);
     margin-bottom: 18px;
+    overflow: hidden;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   h1 {
@@ -148,12 +149,12 @@
 </head>
 <body>
 <main>
-  <div class="avatar">SS</div>
+  <div class="avatar"><img src="avatar.jpg" alt="Santiago Sosa"></div>
   <h1>Santiago Sosa</h1>
   <p class="bio">A veces hago cosas, y las podés usar totalmente gratis, sin ningún problema.<br><br>Son apps que andan offline, sin publicidad ni nada raro: la info que decidas usar se guarda solo en tu dispositivo y nunca se comparte a internet.</p>
 
   <nav class="app-list">
-    <a id="acordes" class="app" href="https://jsantiago00.github.io/acordes" target="_blank" rel="noopener">
+    <a id="acordes" class="app" href="https://jsantiago00.github.io/pentagrama" target="_blank" rel="noopener">
       <span class="app-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="2.2"/>
