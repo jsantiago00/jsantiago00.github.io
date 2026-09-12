@@ -110,6 +110,14 @@
     height: 100%;
   }
 
+  .app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28%;
+    display: block;
+  }
+
   .app-text {
     text-align: left;
     flex: 1;
@@ -142,7 +150,7 @@
 <main>
   <div class="avatar">SS</div>
   <h1>Santiago Sosa</h1>
-  <p class="bio">A veces hago cosas, podés usarlas y descargarlas a tu celu o compu sin problemas.<br><br>Tu info es completamente privada ya que se guarda todo localmente en tu dispositivo y ¡no se comparte al internet!</p>
+  <p class="bio">A veces hago cosas, y las podés usar totalmente gratis, sin ningún problema.<br><br>Son apps que andan offline, sin publicidad ni nada raro: la info que decidas usar se guarda solo en tu dispositivo y nunca se comparte a internet.</p>
 
   <nav class="app-list">
     <a id="acordes" class="app" href="https://jsantiago00.github.io/acordes" target="_blank" rel="noopener">
@@ -160,10 +168,7 @@
     </a>
     <a id="musigrama" class="app" href="https://jsantiago00.github.io/musigrama" target="_blank" rel="noopener">
       <span class="app-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 15c2-4 4 4 6 0s4 4 6 0 4 4 6 0"/>
-          <path d="M4 19.5l14-15.5"/>
-        </svg>
+        <img src="musigrama-icon.png" alt="">
       </span>
       <span class="app-text">
         <div class="app-name">MusiGrama</div>
